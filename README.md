@@ -76,6 +76,11 @@ int median_of_three(int *x, int l, int u) {
 ```
 <h5 align="center">图2-1 median函数C语言实行</h5>
 
+## 实际运行和分析
+<p align="center">
+     <img width="507" alt="Снимок экрана 2024-06-21 в 18 38 57" src="https://github.com/frozosea/-/assets/99795132/5c1fefc9-18d0-472a-b3de-e31634dfb211">
+</p>
+<h5 align="center">表2.4-1 优化前后整形数据排序时间（Release配置版）（秒)</h5>
 
 
 
