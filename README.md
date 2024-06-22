@@ -82,6 +82,60 @@ int median_of_three(int *x, int l, int u) {
 </p>
 <h5 align="center">表2.4-1 优化前后整形数据排序时间（Release配置版）（秒)</h5>
 
+```C lang
+#include "qsort3.h"
+#include <stdio.h>
 
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int median_of_three(int *x, int l, int u) {
+    int m = (l + u) / 2;
+    if (x[l] > x[m]) swap(&x[l], &x[m]);
+    if (x[l] > x[u]) swap(&x[l], &x[u]);
+    if (x[m] > x[u]) swap(&x[m], &x[u]);
+    return m;
+}
+
+void qsort3(int *x, int l, int u) {
+    int i = l;
+    int j = u;
+
+    if (l >= u)
+        return;
+    
+    int pp = median_of_three(x, l, u);
+    int pivot = x[pp];
+
+    do {
+        while (x[i] < pivot) {
+            i++;
+        }
+        while (pivot < x[j]) {
+            j--;
+        }
+
+        if (i <= j) {
+            swap(&x[i], &x[j]);
+            i++;
+            j--;
+        }
+
+    } while (i <= j);
+
+
+    if (l < j) {
+        qsort3(x, l, j);
+    }
+    if (i < u) {
+        qsort3(x, i, u);
+    }
+}
+
+```
+<h5 align="center">例如</h5>
 
 
