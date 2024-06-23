@@ -1,4 +1,4 @@
-# 快速排序算法
+![image](https://github.com/frozosea/-/assets/99795132/6e669e8c-8bc7-483e-87ea-9022a8b761d5)# 快速排序算法
 
 ## 概念
 
@@ -136,6 +136,8 @@ void qsort3(int *x, int l, int u) {
 }
 
 ```
-<h5 align="center">例如</h5>
-
-
+<h5 align="center">C语言优化快速排序算法实现</h5>
+<p align="center">
+     <img width="392" alt="Снимок экрана 2024-06-23 в 14 21 43" src="https://github.com/frozosea/-/assets/99795132/df0c1771-debe-475e-97af-4b04a17b14f5">
+</p>
+<h5 align="center">表2.4-3 从结构体数据看稳定性（65536大小）（Release配置版）（分)</h5>
