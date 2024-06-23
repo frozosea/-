@@ -1,4 +1,4 @@
-![image](https://github.com/frozosea/-/assets/99795132/6e669e8c-8bc7-483e-87ea-9022a8b761d5)# 快速排序算法
+# 快速排序算法
 
 ## 概念
 
@@ -76,12 +76,6 @@ int median_of_three(int *x, int l, int u) {
 ```
 <h5 align="center">图2-1 median函数C语言实行</h5>
 
-## 实际运行和分析
-<p align="center">
-     <img width="507" alt="Снимок экрана 2024-06-21 в 18 38 57" src="https://github.com/frozosea/-/assets/99795132/5c1fefc9-18d0-472a-b3de-e31634dfb211">
-</p>
-<h5 align="center">表2.4-1 优化前后整形数据排序时间（Release配置版）（秒)</h5>
-
 ```C lang
 #include "qsort3.h"
 #include <stdio.h>
@@ -136,8 +130,17 @@ void qsort3(int *x, int l, int u) {
 }
 
 ```
-<h5 align="center">C语言优化快速排序算法实现</h5>
+<h5 align="center">图2-2 C语言优化快速排序算法实现</h5>
+
+
+## 实际运行和分析
+<p align="center">
+     <img width="507" alt="Снимок экрана 2024-06-21 в 18 38 57" src="https://github.com/frozosea/-/assets/99795132/5c1fefc9-18d0-472a-b3de-e31634dfb211">
+</p>
+<h5 align="center">表2.4-1 优化前后整形数据排序时间（Release配置版）（秒)</h5>
+
+
 <p align="center">
      <img width="392" alt="Снимок экрана 2024-06-23 в 14 21 43" src="https://github.com/frozosea/-/assets/99795132/df0c1771-debe-475e-97af-4b04a17b14f5">
 </p>
-<h5 align="center">表2.4-3 从结构体数据看稳定性（65536大小）（Release配置版）（分)</h5>
+<h5 align="center">表2.4-2 从结构体数据看稳定性（65536大小）（Release配置版）（分)</h5>
